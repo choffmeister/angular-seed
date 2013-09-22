@@ -1,0 +1,18 @@
+doctype 5
+html
+    head
+        meta(charset="utf-8")
+        title Angular Seed
+        meta(name="viewport", content="width=device-width")
+        link(rel="stylesheet", href="/styles/main.css")
+        script(data-main="/src/app", src="/bower_components/requirejs/require.js", async)
+    body(ng-controller="MainController")
+        div#wrap
+            header.clearfix
+                div.container
+                    include partials/header
+            include partials/messages
+            div.container.clearfix(ng-view)
+        footer.clearfix
+            div.container
+                include partials/footer
